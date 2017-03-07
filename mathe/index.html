@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Mathe Abbildungen</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+    <script src="MathPrimitive.js"></script>
+    <script src="Plane.js"></script>
+    <script src="Line.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Scripts/three.min.js"/></script>
+</head>
+<body>
+    <h1>Mathe Abbildungen</h1>
+    <div id="content" style="width:800px; height:800px; display:inline-block;"></div>
+    <div id="controls">
+        <div id="parameters">
+            <div id="parameters-plane" style="display:none;">
+                <div style="display:inline-block; width:256px;">
+                    <label for="plane-x">Position x</label>
+                    <input type="text" id="plane-x" />
+                    <label for="plane-y">Position y</label>
+                    <input type="text" id="plane-y" />
+                    <label for="plane-z">Position z</label>
+                    <input type="text" id="plane-z" />
+                </div>
+
+                <div style="display:inline-block; width:256px;">
+                    <label for="plane-nx">Normale x</label>
+                    <input type="text" id="plane-nx" />
+                    <label for="plane-ny">Normale y</label>
+                    <input type="text" id="plane-ny" />
+                    <label for="plane-nz">Normale z</label>
+                    <input type="text" id="plane-nz" />
+                </div>
+            </div>
+            <div id="parameters-line" style="display:none;">
+                <div style="display:inline-block; width:256px;">
+                    <label for="line-x">Stützvektor x</label>
+                    <input type="text" id="line-x" />
+                    <label for="line-y">Stützvektor y</label>
+                    <input type="text" id="line-y" />
+                    <label for="line-z">Stützvektor z</label>
+                    <input type="text" id="line-z" />
+                </div>
+
+                <div style="display:inline-block; width:256px;">
+                    <label for="line-nx">Richtungsvektor x</label>
+                    <input type="text" id="line-nx" />
+                    <label for="line-ny">Richtungsvektor y</label>
+                    <input type="text" id="line-ny" />
+                    <label for="line-nz">Richtungsvektor z</label>
+                    <input type="text" id="line-nz" />
+                </div>
+            </div>
+            <div id="parameters-mat" style="display:none;">
+                <div style="display:inline-block; width:256px;">
+                    <input type="text" id="mat-x1" />
+                    <input type="text" id="mat-y1" />
+                    <input type="text" id="mat-z1" />
+                </div>
+                <div style="display:inline-block; width:256px;">
+                    <input type="text" id="mat-x2" />
+                    <input type="text" id="mat-y2" />
+                    <input type="text" id="mat-z2" />
+                </div>
+                <div style="display:inline-block; width:256px;">
+                    <input type="text" id="mat-x3" />
+                    <input type="text" id="mat-y3" />
+                    <input type="text" id="mat-z3" />
+                </div>
+            </div>
+            <button id="add">Hinzufügen</button>
+        </div>
+        <div id="buttons">
+            <button id="btn-add-plane">Ebene hinzufügen</button>
+            <button id="btn-add-line">Gerade hinzufügen</button>
+            <button id="btn-add-mat">Abbilden</button>
+        </div>
+    </div>
+    <div id="elements" display="inline-block;"></div>
+</body>
+</html>
